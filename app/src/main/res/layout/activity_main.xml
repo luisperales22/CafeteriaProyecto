@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="#fbf1e9"
-    tools:context=".MainActivity">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#fbf1e9"
+        tools:context=".MainActivity">
 
-    <FrameLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="24dp">
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="24dp">
 
-        <ImageView
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_cafetiendita"
+                android:scaleType="centerInside"/>
+        </FrameLayout>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_cafetiendita"
-            android:scaleType="centerInside"/>
-    </FrameLayout>
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textAlignment="center"
+            android:textColor="#87644b"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_margin="16dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bienvenido"
-        android:textAlignment="center"
-        android:textColor="#87644b"
-        android:textStyle="bold"
-        android:textSize="28sp"
-        android:layout_margin="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sistema de Cafetería"
+            android:textAlignment="center"
+            android:textColor="#5d4037"
+            android:layout_marginBottom="32dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0"
+            android:textAlignment="center"
+            android:textColor="#5d4037"
+            android:layout_marginBottom="5dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sistema de Cafetería"
-        android:textAlignment="center"
-        android:textColor="#5d4037"
-        android:layout_marginBottom="32dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Version 1.0"
-        android:textAlignment="center"
-        android:textColor="#5d4037"
-        android:layout_marginBottom="5dp"/>
+        <Button
+            android:id="@+id/btnGestionarMesas"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="GESTIONAR MESAS"
+            android:textSize="18sp"
+            android:backgroundTint="#87644b"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="16dp"/>
 
-    <Button
-        android:id="@+id/btnGestionarMesas"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="GESTIONAR MESAS"
-        android:textSize="18sp"
-        android:backgroundTint="#87644b"
-        android:layout_marginHorizontal="32dp"
-        android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/btnReportes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="VER REPORTES"
+            android:textSize="18sp"
+            android:textColor="#87644b"
+            android:backgroundTint="#ffffff"
+            android:layout_marginHorizontal="32dp"/>
 
-    <Button
-        android:id="@+id/btnReportes"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="VER REPORTES"
-        android:textSize="18sp"
-        android:textColor="#87644b"
-        android:backgroundTint="#ffffff"
-        android:layout_marginHorizontal="32dp"/>
-
-</LinearLayout>
+    </LinearLayout>

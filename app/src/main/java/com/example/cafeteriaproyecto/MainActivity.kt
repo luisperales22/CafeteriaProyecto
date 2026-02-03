@@ -1,20 +1,23 @@
 package com.example.cafeteriaproyecto
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        // 1. Encontramos el botón "Gestionar Mesas" usando el ID que me mostraste en tu XML
+        val btnMesas = findViewById<Button>(R.id.btnGestionarMesas)
+        btnMesas.setOnClickListener {
+            val intent = Intent(this, PedidoActivity::class.java)
+            startActivity(intent)
         }
+
+
     }
 }
