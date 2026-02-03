@@ -8,10 +8,20 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class PedidoActivity : AppCompatActivity() {
+
+    lateinit var btnAgregar: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_pedido)
+
+
+        btnAgregar = findViewById<Button>(R.id.btnAgregar)
+
+        btnAgregar.setOnClickListener {
+            var intent = Intent(this, ProductosActivity::class.java)
+            startActivity(intent)
+        }
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
