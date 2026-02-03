@@ -3,21 +3,24 @@ package com.example.cafeteriaproyecto
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+class ProductosActivity : AppCompatActivity() {
 
-class MainActivity : AppCompatActivity() {
-    lateinit var btnGestionarMesas: Button
+    lateinit var btnAceptar : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_productos)
 
-        btnGestionarMesas = findViewById<Button>(R.id.btnGestionarMesas)
+        btnAceptar = findViewById<Button>(R.id.btnAceptar)
 
-        btnGestionarMesas.setOnClickListener {
-            var intent = Intent(this, MesasActivity::class.java)
+        btnAceptar.setOnClickListener {
+            var intent = Intent(this, PedidoActivity::class.java)
             startActivity(intent)
         }
 
@@ -28,7 +31,5 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-
     }
 }

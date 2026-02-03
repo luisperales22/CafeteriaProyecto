@@ -22,12 +22,12 @@
             android:id="@+id/tvTituloMesa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mesa #05"
-            android:textSize="30sp"
-            android:textColor="#87644b"
-            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:text="Mesa #02"
             android:textAlignment="center"
-            android:layout_marginBottom="16dp"/>
+            android:textColor="#87644b"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvTotal"

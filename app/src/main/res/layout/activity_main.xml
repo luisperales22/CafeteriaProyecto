@@ -47,17 +47,17 @@
             android:textColor="#5d4037"
             android:layout_marginBottom="5dp"/>
 
-        <Button
-            android:id="@+id/btnGestionarMesas"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="GESTIONAR MESAS"
-            android:textSize="18sp"
-            android:backgroundTint="#87644b"
-            android:layout_marginHorizontal="32dp"
-            android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/btnGestionarMesas"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#87644b"
+        android:text="GESTIONAR MESAS"
+        android:textSize="18sp" />
 
-        <Button
+    <Button
             android:id="@+id/btnReportes"
             android:layout_width="match_parent"
             android:layout_height="60dp"
