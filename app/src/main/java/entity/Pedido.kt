@@ -2,12 +2,12 @@ package entity
 
 data class Pedido(
 
-    var id: String = "",
-    var numeroMesa: Int = 0,
-    var items: List<ItemPedido> = listOf(),
-    var total: Double = 0.0,
-    var metodoPago: String = "",
-    var fecha: String = "",
-    var estado: String = "Pagado"
+    val id: Int = 0,
+    val idMesa: Int = 0,
+    val idUsuario: Int = 0,
+    val fecha: String = "",
+    val metodoPago: String = "",
+    val total: Double = 0.0,
+    val estado: String = "activo"
 
 )

@@ -64,10 +64,12 @@
             android:textAlignment="center"
             android:text="Metodos de Pago"/>
         <RadioGroup
+            android:id="@+id/radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal" >
             <RadioButton
+                android:id="@+id/rbEfectivo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -78,6 +80,7 @@
 
                 />
             <RadioButton
+                android:id="@+id/rbTransferencia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"

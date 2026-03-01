@@ -27,7 +27,7 @@ class PerfilActivity : AppCompatActivity() {
 
 
         btnCerrarSesion.setOnClickListener {
-            Toast.makeText(this, "Cerrando sesión...", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Cerrando sesion...", Toast.LENGTH_SHORT).show()
 
 
             val intent = Intent(this, LoginActivity::class.java)

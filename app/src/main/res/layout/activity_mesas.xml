@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MesasActivity">
@@ -38,54 +38,18 @@
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/white"/>
 
-            <Button
-                android:id="@+id/btnMesa1"
-                android:layout_width="180dp"
+            <LinearLayout
+                android:id="@+id/layoutMesas"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="Mesa #1 - Ocupada"
-                android:backgroundTint="#610909"
-                android:textColor="#FFFFFF" />
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical" />
 
-            <Button
-                android:id="@+id/btnMesa2"
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="Mesa #2 - Libre"
-                android:backgroundTint="#026209"
-                android:textColor="#FFFFFF" />
-
-            <Button
-                android:id="@+id/btnMesa3"
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="Mesa #3 - Ocupada"
-                android:backgroundTint="#610808"
-                android:textColor="#FFFFFF" />
         </LinearLayout>
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_marginTop="40dp"
-            android:background="@android:color/transparent"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:title="" />
 
     </FrameLayout>
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="#FFFFFF"
-        app:itemIconTint="#87644b"
-        app:itemTextColor="#121212"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/menu_cafeteria" />
 
-</androidx.drawerlayout.widget.DrawerLayout>
+</FrameLayout>
